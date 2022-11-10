@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #f8f6f3;
+}
+
+.shadows {
+  box-shadow: 4px 4px 4px 0px #00000040;
+
+  box-shadow: -4px -4px 4px 0px #00000040;
+
+  box-shadow: 0px 0px 4px 0px #00000040;
+}
