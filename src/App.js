@@ -3,7 +3,7 @@ import FirstSection from './components/Molecules/FirstSection';
 
 function App() {
   return (
-    <div className='flex flex-col md:container mt-10  gap-4 lg:flex-row' >
+    <div className='flex flex-col lg:container lg:justify-center mt-10 gap-4 lg:flex-row' >
       <FirstSection/>
       <AllAdsSection/>
     </div>

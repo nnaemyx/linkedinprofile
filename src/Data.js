@@ -1,6 +1,12 @@
+// import images
 import Profileimage from "./images/Profile Pic Display.svg";
-import { AiOutlinePlus } from "react-icons/ai";
 import CryptoIcon from "./images/crypto pay.svg";
+import Adsimage from './images/pic2 (1).png'
+// import icons
+import { AiOutlinePlus } from "react-icons/ai";
+
+// import components
+import Messagebtn from "./components/Atoms/Messagebtn";
 
 export const profile = [
   {
@@ -11,11 +17,37 @@ export const profile = [
     contact: "Contact Info",
     icon: <AiOutlinePlus />,
     followbtn: "Follow",
-    messagebtn: "Message",
     morebtn: "More",
     availablebtn: "Available for hire",
     bookbtn: "Book a call",
     cryptoicon: <CryptoIcon />,
     crypto: "Crypto",
+  },
+];
+
+export const people = [
+  {
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Senior Software Engineer | Javascript .NET | AWS | Python",
+    message: <Messagebtn />,
+  },
+  {
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Senior Software Engineer | Javascript .NET | AWS | Python",
+    message: <Messagebtn />,
+  },
+  {
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Senior Software Engineer | Javascript .NET | AWS | Python",
+    message: <Messagebtn />,
+  },
+  {
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Senior Software Engineer | Javascript .NET | AWS | Python",
+    message: <Messagebtn />,
   },
 ];

@@ -17,13 +17,13 @@ const Aboutsection = () => {
       <div className="lg:w-[830px] py-8 lg:pl-[2rem] pl-[1rem] lg:h-[190px]">
         <h1 className="font-semibold text-[17px]">About</h1>
         <div className="hidden md:block">
-          <p className="lg:w-[740px]">
+          <p className="xl:w-[740px] lg:w-[620px]">
             I am an experienced Software Engineer with passion for building
             innovative softwares to drive business growth. I have track history
             of working with several software technology companies.
           </p>
 
-          <p className="lg:mt-4 lg:w-[680px]">
+          <p className="lg:mt-4 xl:w-[680px] lg:w-[500px]">
             I have great leadership skills and have demostrated ability to
             inspire, motivate and manage a team.
           </p>

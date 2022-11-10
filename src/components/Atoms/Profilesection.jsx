@@ -3,6 +3,7 @@ import { profile } from "../../Data";
 import { BiDotsVerticalRounded } from 'react-icons/bi'
 // import {CgClose} from 'react-icons/cg'
 import MobileProfille from "./MobileProfille";
+import Messagebtn from "./Messagebtn";
 
 
 const Profilesection = () => {
@@ -13,7 +14,7 @@ const Profilesection = () => {
 
   return (
     <div className="md:h-[460px] h-[300px] md:bg-white bg-[#F8F6F3] lg:rounded-t-[10px]">
-      <div className="bg-primary lg:w-[830px]  md:rounded-t-[10px] h-[110px] md:h-[202px]">
+      <div className="bg-primary xl:w-[830px] lg:w-[100%] md:rounded-t-[10px] h-[110px] md:h-[202px]">
         {profile.map((items, index) => {
           return <div className="flex justify-between" key={index}>
             <div>
@@ -41,7 +42,7 @@ const Profilesection = () => {
                     </div>
 
                     <div>
-                      <button className="px-3 py-1 bg-primary text-white rounded-full text-[12px]">{ items.messagebtn}</button>
+                      <Messagebtn/>
                     </div>
 
                     <div>
