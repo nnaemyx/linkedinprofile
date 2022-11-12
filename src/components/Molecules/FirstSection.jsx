@@ -13,7 +13,8 @@ const FirstSection = () => {
       <Aboutsection />
       <Recentblog />
       <Skills />
-      <Reviews/>
+      <Reviews />
+      
     </div>
   )
 }

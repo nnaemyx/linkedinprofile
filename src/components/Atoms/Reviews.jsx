@@ -1,7 +1,6 @@
 import React from "react";
 import { reviews } from "../../Data";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
 import { Navigation } from "swiper";
 import {AiFillStar} from 'react-icons/ai'
 
@@ -42,7 +41,7 @@ const Reviews = () => {
               spaceBetween: 5,
             },
           }}
-          modules={[Pagination, Navigation]}
+          modules={[Navigation]}
           className="mySwiper min-h-[110px]"
         >
           {reviews.map((items, index) => {
