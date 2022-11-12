@@ -50,7 +50,7 @@ const Reviews = () => {
                 <div key={index} className='bg-white h-[240px] w-[200px] lg:w-auto lg:mx-0 mx-[3.5rem] text-center mb-8'>
                   <img src={items.image.type} alt="" className="lg:mx-[5rem] mx-[4rem]  pt-4" />
                   <div className="items-center">
-                    <h1>{items.name}</h1>
+                    <h1 className="font-semibold">{items.name}</h1>
                     <p>{items.paragraph}</p>
                     <p className="lg:px-[1rem] mb-2 text-center">{ items.paragraph1}</p>
                   </div>
