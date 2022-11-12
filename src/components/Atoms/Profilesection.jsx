@@ -19,7 +19,7 @@ const Profilesection = () => {
           return <div className="flex justify-between" key={index}>
             <div>
               <div>
-                <img src={items.image.type} alt="" className=' md:pt-[7rem] md:w-[180px] w-[160px] md:h-[280px]' />
+                <img src={items.image.type} alt="" className=' md:pt-[7rem] mt-8 md:w-[180px] w-[150px] md:h-[280px]' />
               </div>
               <div className="md:pl-[2rem] pl-[1rem]">
                 <h1 className="md:text-[20px] font-semibold">{items.heading}</h1>
@@ -69,7 +69,7 @@ const Profilesection = () => {
             {/* Nav icon  */}
             <div
               onClick={handleNav}
-              className="md:hidden pt-[7.5rem] ">
+              className="md:hidden pt-[8rem] ">
                 
               {click ? <BiDotsVerticalRounded size={25} />  : <BiDotsVerticalRounded size={25} />}
               
