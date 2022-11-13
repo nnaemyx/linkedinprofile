@@ -15,3 +15,27 @@ body {
   box-shadow: 0px 0px 4px 0px #00000040;
 }
 
+.swiper-button-next {
+  background-image: url('./images/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  z-index: 20;
+  right: 60%;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url('./images/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  left: 40%;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
