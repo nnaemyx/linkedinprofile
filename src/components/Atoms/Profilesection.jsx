@@ -9,8 +9,8 @@ import Messagebtn from "./Messagebtn";
 const Profilesection = () => {
   const [click, setClick] = useState(false)
   const handleNav = () => {
-        setClick(!click);
-    }
+    setClick(!click);
+  }
 
   return (
     <div className="md:h-[460px] h-[300px] md:bg-white bg-[#F8F6F3] lg:rounded-t-[10px]">
@@ -79,8 +79,8 @@ const Profilesection = () => {
             {/* nav mobile */}
           <div
             className={`${
-              click ? "-right-full" : "left-[5rem]"
-            } md:hidden fixed overflow-auto bottom-0 top-[12rem]  w-full max-w-xs h-screen transition-all`}
+              !click ? "hidden " : "left-[5rem]"
+            } md:hidden  fixed overflow-auto bottom-0 top-[12rem]  w-full max-w-xs h-screen transition-all`}
           >
             <MobileProfille />
           </div>
