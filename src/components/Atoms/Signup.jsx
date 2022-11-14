@@ -5,9 +5,9 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Signup = () => {
   return (
-    <div className="pl-[10rem]  bg-white">
+    <div className="lg:pl-[10rem] px-[1rem]  bg-white">
       <div className=" flex lg:flex-row flex-col justify-between">
-        <div className="w-[35%] h-[120rem]">
+        <div className="lg:w-[35%]">
           <img src={Logo} alt="" className="mb-10" />
           <div>
             <h1 className="text-[26px] font-semibold">
@@ -26,7 +26,7 @@ const Signup = () => {
               <input
                 type="text"
                 placeholder="Enter Email Address"
-                className="w-[170%] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
+                className="lg:w-[170%] w-[100%] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
               />
             </div>
             <div className="block">
@@ -34,7 +34,7 @@ const Signup = () => {
               <input
                 type="text"
                 placeholder="Enter Username"
-                className="w-[170%] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
+                className="lg:w-[170%] w-[100%]  rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
               />
             </div>
             <div className="block">
@@ -42,21 +42,25 @@ const Signup = () => {
               <input
                 type="password"
                 placeholder="Enter Password"
-                className="w-[170%] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
+                className="lg:w-[170%] w-[100%]  rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
               />
             </div>
           </form>
 
-          <div className="flex text-[13px] gap-2 w-[37rem] mt-4 text-[#575757] font-[440px] ">
-            <input type="checkbox" />
-            <p className="">
-              I don't want to receive emails about Code&Jobs and feature
-              updates, marketing best practices, and promotions from Code &
-              Jobs.
-            </p>
+          <div className="flex text-[13px] gap-2 lg:w-[37rem] mt-4  text-[#575757] font-[440px] ">
+            <div className="mt-1">
+              <input type="checkbox" />
+            </div>
+            <div>
+              <p className="">
+                I don't want to receive emails about Code&Jobs and feature
+                updates, marketing best practices, and promotions from Code &
+                Jobs.
+              </p>
+            </div>
           </div>
           <div className="mt-4 text-[#575757] ">
-            <p className="text-[13px] w-[35rem]  mb-6">
+            <p className="text-[13px] lg:w-[35rem]  mb-6">
               By creating an account, you agree to our{" "}
               <span className="text-[#26619C] underline underline-offset-4">
                 Terms
@@ -78,8 +82,14 @@ const Signup = () => {
               </a>
             </div>
             <p className="mt-4 text-[12px]">
-              Invisible reCAPTCHA by <span className=" underline underline-offset-4">Google Privacy Policy </span> and <span className="underline underline-offset-4">Terms of Use</span> 
-            </p>.
+              Invisible reCAPTCHA by{" "}
+              <span className=" underline underline-offset-4">
+                Google Privacy Policy{" "}
+              </span>{" "}
+              and{" "}
+              <span className="underline underline-offset-4">Terms of Use</span>
+            </p>
+            .
           </div>
         </div>
 
