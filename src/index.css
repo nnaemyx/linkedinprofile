@@ -7,6 +7,12 @@ body {
   background-color: #f8f6f3;
 }
 
+form {
+  font-family: "Satochi", sans-serif;
+}
+h1, p, a {
+  font-family: "Manrope", sans-serif;
+}
 .shadows {
   box-shadow: 4px 4px 4px 0px #00000040;
 

@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: "Manrope",
+      secondary: "Satochi",
     },
     container: {
       padding: {
@@ -21,6 +22,9 @@ module.exports = {
       colors: {
         primary: "#26619C",
         secondary: "#65AB66",
+      },
+      backgroundImage: {
+        pattern: "url('/src/images/Vector.svg')",
       },
     },
   },

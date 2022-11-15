@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const Signup = () => {
   return (
-    <div className="lg:pl-[10rem] px-[1rem]  bg-white">
+    <div className="lg:pl-[3rem] px-[1rem] font-secondary sign bg-white">
       <div className=" flex lg:flex-row flex-col justify-between">
         <div className="lg:w-[35%]">
           <img src={Logo} alt="" className="mb-10" />
@@ -26,7 +26,7 @@ const Signup = () => {
               <input
                 type="text"
                 placeholder="Enter Email Address"
-                className="lg:w-[170%] w-[100%] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
+                className="lg:w-[170%] w-[100%] focus:outline-none focus:px-[1rem] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
               />
             </div>
             <div className="block">
@@ -34,7 +34,7 @@ const Signup = () => {
               <input
                 type="text"
                 placeholder="Enter Username"
-                className="lg:w-[170%] w-[100%]  rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
+                className="lg:w-[170%] w-[100%] focus:outline-none focus:px-[1rem] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
               />
             </div>
             <div className="block">
@@ -42,7 +42,7 @@ const Signup = () => {
               <input
                 type="password"
                 placeholder="Enter Password"
-                className="lg:w-[170%] w-[100%]  rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
+                className="lg:w-[170%] w-[100%] focus:outline-none focus:px-[1rem] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
               />
             </div>
           </form>
@@ -94,6 +94,7 @@ const Signup = () => {
         </div>
 
         <div className="pr-8">
+          <div className="bg-pattern bg-center"></div>
           <img src={Image} alt="" className="w-[401px]" />
         </div>
       </div>
