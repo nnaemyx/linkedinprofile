@@ -65,11 +65,12 @@ const Login = () => {
         <div className="pr-2 lg:pr-8 lg:px-[13rem]">
           <img src={Image} alt="" className="w-[901px] lg:mt-0 mt-8" />
           <div className="text-center mt-4">
-            <h1 className="text-[20px] font-semibold">Gigs And People For Hire</h1>
+            <h1 className="text-[20px] font-semibold">
+              Be a part of the worldwide cryptocurrency network
+            </h1>
             <p className="lg:text-[15px] text-[#575757]  text-[14px] lg:px-[4.6rem] mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              eget eros suscipit purus consequat aliquet at a lectus. Proin et
-              sem sapien. Donec ex orci, fermentum eu.
+              Show your skills with your portfolios and blog posts. Find job
+              seekers and recruiters and pay and earn cryptocurrency
             </p>
           </div>
           <div className="lg:px-[12.5rem] px-[6rem]">
