@@ -7,7 +7,7 @@ const Signup = () => {
   return (
     <div className="lg:pl-[3rem] px-[1rem] font-secondary sign bg-white">
       <div className=" flex lg:flex-row flex-col justify-between">
-        <div className="lg:w-[35%]">
+        <div className="lg:w-[35%] lg:pl-[10rem]">
           <img src={Logo} alt="" className="mb-10" />
           <div>
             <h1 className="text-[26px] font-semibold">
@@ -22,23 +22,20 @@ const Signup = () => {
           </div>
           <form action="" className="leading-[3rem] font-medium">
             <div className="block">
-              <label>Email Address</label>
               <input
                 type="text"
                 placeholder="Enter Email Address"
-                className="lg:w-[170%] w-[100%] focus:outline-none focus:px-[1rem] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
+                className="lg:w-[170%] w-[100%] mb-4 mt-4 focus:outline-none focus:px-[1rem] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
               />
             </div>
             <div className="block">
-              <label>Username</label>
               <input
                 type="text"
                 placeholder="Enter Username"
-                className="lg:w-[170%] w-[100%] focus:outline-none focus:px-[1rem] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
+                className="lg:w-[170%] w-[100%] mb-4 focus:outline-none focus:px-[1rem] rounded-md border-[4px] placeholder:text-[13px] placeholder:px-[1rem] border-[#F3F0EB]"
               />
             </div>
             <div className="block">
-              <label>Password</label>
               <input
                 type="password"
                 placeholder="Enter Password"
