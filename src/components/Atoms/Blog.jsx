@@ -29,23 +29,33 @@ const Blog = () => {
                     <p>{items.name}</p>
                     <p>{items.date}</p>
                   </div>
-                  <p className="text-[12px]">{items.software}</p>
+                  <p className="text-[12px] text-[#6B6868]">{items.software}</p>
                 </div>
               </div>
               <div className="flex items-center lg:gap-20 gap-4">
                 <div>
-                  <h1 className="lg:text-[18px] font-[800] lg:mb-7 mb-1 lg:-mt-0 -mt-8">{items.heading}</h1>
-                  <p className="w-[430px] text-[16px] lg:flex hidden lg:mb-4">{items.paragraph}</p>
+                  <h1 className="lg:text-[18px] font-[800] lg:mb-7 mb-1 lg:-mt-0 -mt-8">
+                    {items.heading}
+                  </h1>
+                  <p className="w-[430px] text-[16px] text-[#6B6868] lg:flex hidden lg:mb-4">
+                    {items.paragraph}
+                  </p>
                 </div>
 
                 <div className="lg:pt-0 pt-[1rem]">
-                  <img src={items.imageright.type} className='lg:h-auto  h-[60px]' alt="" />
+                  <img
+                    src={items.imageright.type}
+                    className="lg:h-auto  h-[60px]"
+                    alt=""
+                  />
                 </div>
               </div>
 
-              <div className="flex items-center mb-8 lg:gap-[8rem] gap-4">
+              <div className="flex items-center text-[#6B6868] mb-8 lg:gap-[8rem] gap-4">
                 <div className="flex text-[12px] gap-4">
-                  <p className="border rounded-full bg-[#E6E6E6] -mt-1 py-1 px-3">Web 3</p>
+                  <p className="border rounded-full bg-[#E6E6E6] -mt-1 py-1 px-3">
+                    Web 3
+                  </p>
                   <p>6 min read</p>
                   <p className="lg:flex hidden">Selected for you</p>
                 </div>
@@ -55,8 +65,7 @@ const Blog = () => {
                   <BiDotsHorizontalRounded size={20} />
                 </div>
               </div>
-                    <img src={Line} alt="" />
-
+              <img src={Line} alt="" className="-ml-10" />
             </div>
           );
         })}

@@ -168,3 +168,57 @@ export const blog = [
     name: "James Tom",
   },
 ];
+
+export const staffpost = [
+  {
+    heading: "Staff Post",
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Real talk from UX researcher",
+  },
+  {
+    heading: "Staff Post",
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Real talk from UX researcher",
+  },
+  {
+    heading: "Staff Post",
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Real talk from UX researcher",
+  },
+  {
+    heading: "Staff Post",
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Real talk from UX researcher",
+  },
+];
+
+export const trendingpost = [
+  {
+    heading: "Trending Post",
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Real talk from UX researcher",
+  },
+  {
+    heading: "Trending Post",
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Real talk from UX researcher",
+  },
+  {
+    heading: "Trending Post",
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Real talk from UX researcher",
+  },
+  {
+    heading: "Trending Post",
+    image: <Adsimage />,
+    name: "James Tom",
+    paragraph: "Real talk from UX researcher",
+  },
+];

@@ -47,9 +47,11 @@ h1, p, a {
 } */
 
 
-::placeholder {
+input::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: red;
+  color: #6B6868;
+  font-size: 14px;
+  padding-left: 20px;
   opacity: 1;
   /* Firefox */
 }

@@ -7,7 +7,7 @@ import Searchblog from '../Atoms/Searchblog'
 
 const Blogpage = () => {
   return (
-    <div className='flex lg:flex-row flex-col gap-4'>
+    <div className='flex lg:flex-row flex-col gap-2'>
       <div>
         <Navbar/>
       </div>

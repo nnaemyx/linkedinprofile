@@ -36,8 +36,8 @@ const AdsSlider = () => {
                       <h1 className="lg:text-[30px] lg:w-[30rem] font-[800]">
                         {items.heading}
                       </h1>
-                      <p className="lg:text-[18px] lg:w-[33.5rem]">{items.paragraph}</p>
-                      <div className="flex gap-2 mt-4 lg:mt-0 mb-4 lg:mb-0 text-[12px]">
+                      <p className="lg:text-[18px] lg:w-[33.5rem] text-[#6B6868]">{items.paragraph}</p>
+                      <div className="flex gap-2 text-[#6B6868] mt-4 lg:mt-0 mb-4 lg:mb-0 text-[12px]">
                         <p>{items.name}</p>
                         <p>{items.time}</p>
                       </div>
