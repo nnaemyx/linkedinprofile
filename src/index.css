@@ -21,7 +21,7 @@ h1, p, a {
   box-shadow: 0px 0px 4px 0px #00000040;
 }
 
-.swiper-button-next {
+/* .swiper-button-next {
   background-image: url('./images/arrow-left.svg');
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -44,7 +44,7 @@ h1, p, a {
 
 .swiper-button-prev::after {
   display: none;
-}
+} */
 
 
 ::placeholder {

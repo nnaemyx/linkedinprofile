@@ -1,6 +1,9 @@
+// import { Route, Router, Routes } from 'react-router-dom';
+import AdsSlider from './components/Atoms/AdsSlider';
 import Footer from './components/Atoms/Footer';
 import AllAdsSection from './components/Molecules/AllAdsSection'
 import FirstSection from './components/Molecules/FirstSection';
+import Blogpage from './components/Molecules/Blogpage';
 
 
 function App() {
@@ -11,7 +14,13 @@ function App() {
         <AllAdsSection />
       </div>
       <Footer />
-   
+      <AdsSlider />
+      <Blogpage/>
+      {/* <Router>
+        <Routes>
+          <Route path='/' element={<Blogpage/>}  />
+        </Routes>
+      </Router> */}
     </div>
   );
 }
