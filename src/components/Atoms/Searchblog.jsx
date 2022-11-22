@@ -1,4 +1,5 @@
 import React from 'react'
+import Searchslider from './Searchslider'
 import Staffpost from './Staffpost'
 import Trendingpost from './Trendingpost'
 
@@ -16,6 +17,10 @@ const Searchblog = () => {
 
       <div>
         <Trendingpost/>
+      </div>
+
+      <div>
+        <Searchslider/>
       </div>
 
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Plus from "../../images/plus.svg";
 import Line from "../../images/Line 9.png";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
@@ -6,6 +6,10 @@ import { MdOutlineBookmarkAdd } from "react-icons/md";
 import { blog } from "../../Data";
 
 const Blog = () => {
+  const [click, setClick] = useState(false);
+  const handleNav = () => {
+    setClick(!click);
+  };
   return (
     <div className="lg:w-[850px]">
       <div className="flex gap-4 items-center">
@@ -62,10 +66,27 @@ const Blog = () => {
 
                 <div className="flex gap-2">
                   <MdOutlineBookmarkAdd size={20} />
-                  <BiDotsHorizontalRounded size={20} />
+                  {/* Nav icon  */}
+                  <div onClick={handleNav} className="">
+                    {click ? (
+                      <BiDotsHorizontalRounded size={25} />
+                    ) : (
+                      <BiDotsHorizontalRounded size={25} />
+                    )}
+                  </div>
                 </div>
               </div>
               <img src={Line} alt="" className="-ml-10" />
+              <div
+                className={`${
+                  !click ? "hidden " : "lg:left-[33rem]"
+                }  fixed overflow-auto bottom-0 top-[20rem]  w-full max-w-xs h-screen transition-all`}
+              >
+                <div className="bg-white px-8 py-3 leading-7 font-medium w-40 text-[12px]">
+                  <p>Mute this author</p>
+                  <p>Report of block</p>
+                </div>
+              </div>
             </div>
           );
         })}

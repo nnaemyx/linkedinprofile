@@ -4,6 +4,7 @@ import CryptoIcon from "./images/crypto pay.svg";
 import Adsimage from "./images/pic2 (1).png";
 import Imageleft from './images/Pics frame (1).png'
 import Pic from './images/Pics frame.png'
+import Searchpics from './images/searchslider.svg'
 // import icons
 import { AiOutlinePlus } from "react-icons/ai";
 
@@ -220,5 +221,14 @@ export const trendingpost = [
     image: <Adsimage />,
     name: "James Tom",
     paragraph: "Real talk from UX researcher",
+  },
+];
+
+export const Searchsliders = [
+  {
+    image: <Searchpics />,
+    premier: "PREMIER",
+    decrypt: "Decrypt",
+    heading: "Full-stack Web3 Application Software Engineer",
   },
 ];
