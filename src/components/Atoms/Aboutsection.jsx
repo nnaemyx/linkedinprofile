@@ -14,7 +14,7 @@ const Aboutsection = () => {
 
   return (
     <div className="bg-white mt-6 rounded-md">
-      <div className="lg:w-[830px] py-8 lg:pl-[2rem] pl-[1rem] lg:h-[190px]">
+      <div className="lg:w-[830px] py-8 lg:pl-[2rem] pl-[1rem] lg:h-[220px]">
         <h1 className="font-semibold text-[17px]">About</h1>
         <div className="hidden md:block">
           <p className="xl:w-[740px] lg:w-[620px]">
@@ -48,7 +48,7 @@ const Aboutsection = () => {
         </div>
 
         <div>
-          
+          <a href="google.com" className="text-[#26619C] font-medium text-[13px] lg:text-[15px]">Contact Info</a>
         </div>
       </div>
     </div>

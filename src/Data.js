@@ -1,57 +1,80 @@
 // import images
 import Profileimage from "./images/Profile Pic Display.svg";
-import CryptoIcon from "./images/crypto pay.svg";
+import CryptoIcon from "./images/cryptoicon.svg";
 import Adsimage from "./images/pic2 (1).png";
 import Imageleft from './images/Pics frame (1).png'
 import Pic from './images/Pics frame.png'
 import Searchpics from './images/searchslider.svg'
+import Editicon from "./images/arrow-down-to-line.svg";
+
 // import icons
 import { AiOutlinePlus } from "react-icons/ai";
 
 // import components
-import Messagebtn from "./components/Atoms/Messagebtn";
 
 export const profile = [
   {
     image: <Profileimage />,
-    heading: "Alisha tiffany",
-    paragraph: "Software Developer  |  Fullstack  |  Node.js  |  Javascript",
+    name: "Alisha tiffany",
+    username: "@alishatiffany",
+    software: "Software Developer",
+    location: "London UK, GMT - 11:30AM",
     followers: "4k followers",
     contact: "Contact Info",
     icon: <AiOutlinePlus />,
     followbtn: "Follow",
     morebtn: "More",
     availablebtn: "Available for hire",
-    bookbtn: "Book a call",
+    bookbtn: "Schedule a call",
     cryptoicon: <CryptoIcon />,
     crypto: "Crypto",
   },
 ];
 
+
+
 export const people = [
   {
     image: <Adsimage />,
     name: "James Tom",
-    paragraph: "Senior Software Engineer | Javascript .NET | AWS | Python",
-    message: <Messagebtn />,
+    paragraph: "Software Engineer",
+    follow: "follow",
   },
   {
     image: <Adsimage />,
     name: "James Tom",
-    paragraph: "Senior Software Engineer | Javascript .NET | AWS | Python",
-    message: <Messagebtn />,
+    paragraph: "Software Engineer",
+    follow: "follow",
   },
   {
     image: <Adsimage />,
     name: "James Tom",
-    paragraph: "Senior Software Engineer | Javascript .NET | AWS | Python",
-    message: <Messagebtn />,
+    paragraph: "Software Engineer",
+    follow: "follow",
   },
   {
     image: <Adsimage />,
     name: "James Tom",
-    paragraph: "Senior Software Engineer | Javascript .NET | AWS | Python",
-    message: <Messagebtn />,
+    paragraph: "Software Engineer",
+    follow: "follow",
+  },
+];
+
+export const files = [
+  {
+    name: "Resume/CV",
+    docs: "Google Docs",
+    icon: <Editicon />,
+  },
+  {
+    name: "Resume/CV",
+    docs: "Google Docs",
+    icon: <Editicon />,
+  },
+  {
+    name: "Resume/CV",
+    docs: "Google Docs",
+    icon: <Editicon />,
   },
 ];
 

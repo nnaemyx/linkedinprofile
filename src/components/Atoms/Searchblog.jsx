@@ -9,7 +9,7 @@ const Searchblog = () => {
       <div className='text-center hidden lg:block'>
         <input type="text" placeholder="&#x1F50E;&#xFE0E; Search for blog post..." className='rounded-full focus:outline-none border-[black] border-2 mt-4 py-2 w-[18rem]' />
       </div>
-
+      
 
       <div>
         <Staffpost />
