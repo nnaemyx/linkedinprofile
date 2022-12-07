@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import { profile } from "../../Data";
 import { GoLocation } from "react-icons/go";
 import { FiUserPlus } from "react-icons/fi";
@@ -8,9 +8,11 @@ import MoonIcon from "../../images/moon 2.svg";
 import Messagebtn from "./Messagebtn";
 // import {CgClose} from 'react-icons/cg'
 import MobileProfille from "./MobileProfille";
+import Follow from "./Follow";
 
 const Profilesection = () => {
   const [click, setClick] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
   const handleNav = () => {
     setClick(!click);
   };
@@ -79,10 +81,11 @@ const Profilesection = () => {
                   </div>
                   <div className="flex gap-2 mt-3 items-center">
                     <div>
-                      <button className="px-3 py-1 bg-primary text-white rounded-full flex items-center text-[12px]">
+                      <button onClick={() => setOpenModal(true)} className="px-3 py-1 bg-primary text-white rounded-full flex items-center text-[12px]">
                         <span className="w-[14px]">{items.icon}</span>
                         {items.followbtn}
                       </button>
+                      <Follow open={openModal} onClose={() => setOpenModal(false)}/>
                     </div>
 
                     <div>
