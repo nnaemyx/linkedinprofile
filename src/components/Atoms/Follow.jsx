@@ -14,7 +14,7 @@ const Follow = ({ open, onClose }) => {
         </div>
         <p className="px-[3rem] text-[14px] -mt-[.1rem]">@alishatiffany</p>
 
-        <div className="flex text-[#6B6868] font-semibold gap-[24rem] mt-5 px-[6rem]">
+        <div className="flex text-[#6B6868] font-semibold lg:gap-[24rem] mt-5 lg:px-[6rem]">
           <button>Followers</button>
           <button>Following</button>
         </div>
