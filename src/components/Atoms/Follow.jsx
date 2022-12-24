@@ -69,7 +69,7 @@ const Follow = ({ open, onClose }) => {
                 </div>
 
                 <div>
-                  <button className="text-[12px] text-[#6B6868] font-medium px-4 border border-[#6B6868] rounded-full py-1">{follower.following}</button>
+                  <button className="lg:text-[12px] text-[10px] text-[#6B6868] font-medium px-4 border border-[#6B6868] rounded-full py-1">{follower.following}</button>
                 </div>
               </div>
             ))}
