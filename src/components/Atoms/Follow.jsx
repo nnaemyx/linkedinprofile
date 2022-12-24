@@ -7,8 +7,6 @@ const Follow = ({ open, onClose }) => {
   const [followersVisible, setFollowersVisible] = useState(true);
   const [followingVisible, setFollowingVisible] = useState(false);
 
-  
-
   const showFollowers = () => {
     setFollowersVisible(true);
     setFollowingVisible(false);
@@ -35,7 +33,9 @@ const Follow = ({ open, onClose }) => {
         <div className="flex font-semibold lg:gap-[24rem] mt-5 lg:px-[6rem]">
           <button
             className={` text-[#6B6868]  font-bold py-2 px-4 rounded ${
-              selected === "followers" ? "border-b-4 border-primary text-black" : ""
+              selected === "followers"
+                ? "border-b-4 border-primary text-black"
+                : ""
             }`}
             onClick={showFollowers}
           >
@@ -43,30 +43,46 @@ const Follow = ({ open, onClose }) => {
           </button>
           <button
             className={`text-[#6B6868]  font-bold py-2 px-4 rounded ${
-              selected === "following" ? "border-b-4 text-black border-primary" : ""
+              selected === "following"
+                ? "border-b-4 text-black border-primary"
+                : ""
             }`}
             onClick={showFollowing}
           >
             Following
           </button>
         </div>
-          <hr className="w-[100%] text-[#6B6868]/50 mt-2" />
+        <hr className="w-[100%] text-[#6B6868]/50 mt-2" />
         {followersVisible && (
-          <ul className="list-none p-0">
+          <div className=" container mt-4 p-0">
             {followers.map((follower, index) => (
-              <img src= {follower.image.type} className="py-2" alt='ok' key={index}/>
-                
+              <div className="flex justify-between mb-4 container" key={index}>
+                <div className="flex items-center">
+                  <div>
+                    <img src={follower.image.type} className="w-[60px]" alt="ok" />
+                  </div>
+                  <div>
+                    <h1 className="text-[12px] font-semibold">{follower.name}</h1>
+                    <p className="text-[10px] font-normal">{follower.username}</p>
+                    <p className="text-[11.5px] font-semibold">{follower.paragraph}</p>
+                  </div>
+                </div>
+
+                <div>
+                  <button className="text-[12px] text-[#6B6868] font-medium px-4 border border-[#6B6868] rounded-full py-1">{follower.following}</button>
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         )}
         {followingVisible && (
-          <ul className="list-none p-0">
+          <div className="p-0">
             {following.map((user, index) => (
-              <li className="py-2" key={index}>
+              <div className="py-2" key={index}>
                 {user.name}
-              </li>
+              </div>
             ))}
-          </ul>
+          </div>
         )}
       </div>
     </div>
