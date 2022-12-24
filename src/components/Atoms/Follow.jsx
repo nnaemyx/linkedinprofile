@@ -30,11 +30,11 @@ const Follow = ({ open, onClose }) => {
         </div>
         <p className="px-[3rem] text-[14px] -mt-[.1rem]">@alishatiffany</p>
 
-        <div className="flex font-semibold lg:gap-[24rem] mt-5 lg:px-[6rem]">
+        <div className="flex font-semibold lg:gap-[24rem] gap-10 px-[2rem] mt-5 lg:px-[6rem]">
           <button
-            className={` text-[#6B6868]  font-bold py-2 px-4 rounded ${
+            className={` text-[#6B6868] text-[13px] lg:text-[15px] font-bold py-2 px-4 rounded ${
               selected === "followers"
-                ? "border-b-4 border-primary text-black"
+                ? "border-b-2 border-primary text-black"
                 : ""
             }`}
             onClick={showFollowers}
@@ -42,9 +42,9 @@ const Follow = ({ open, onClose }) => {
             Followers
           </button>
           <button
-            className={`text-[#6B6868]  font-bold py-2 px-4 rounded ${
+            className={`text-[#6B6868] text-[13px] lg:text-[15px] font-bold py-2 px-4 rounded ${
               selected === "following"
-                ? "border-b-4 text-black border-primary"
+                ? "border-b-2 text-black border-primary"
                 : ""
             }`}
             onClick={showFollowing}
@@ -54,9 +54,9 @@ const Follow = ({ open, onClose }) => {
         </div>
         <hr className="w-[100%] text-[#6B6868]/50 mt-2" />
         {followersVisible && (
-          <div className=" lg:container mt-4 lg:p-0">
+          <div className="mt-4 lg:p-0">
             {followers.map((follower, index) => (
-              <div className="flex justify-between mb-4 container" key={index}>
+              <div className="flex justify-between mb-4 px-2  lg:container" key={index}>
                 <div className="flex items-center">
                   <div>
                     <img src={follower.image.type} className="w-[60px]" alt="ok" />
