@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BsArrowLeftShort } from "react-icons/bs";
+import {BiDotsHorizontalRounded} from 'react-icons/bi'
 import { followers, following } from "../../Data";
 
 const Follow = ({ open, onClose }) => {
@@ -56,30 +57,69 @@ const Follow = ({ open, onClose }) => {
         {followersVisible && (
           <div className="mt-4 lg:p-0">
             {followers.map((follower, index) => (
-              <div className="flex justify-between mb-4 px-2  lg:container" key={index}>
+              <div
+                className="flex justify-between mb-4 px-2 lg:container"
+                key={index}
+              >
                 <div className="flex items-center">
                   <div>
-                    <img src={follower.image.type} className="w-[60px]" alt="ok" />
+                    <img
+                      src={follower.image.type}
+                      className="w-[60px]"
+                      alt="ok"
+                    />
                   </div>
                   <div>
-                    <h1 className="text-[12px] font-semibold">{follower.name}</h1>
-                    <p className="text-[10px] font-normal">{follower.username}</p>
-                    <p className="text-[11.5px] font-semibold">{follower.paragraph}</p>
+                    <h1 className="text-[12px] font-semibold">
+                      {follower.name}
+                    </h1>
+                    <p className="text-[10px] font-normal">
+                      {follower.username}
+                    </p>
+                    <p className="text-[11.5px] font-semibold">
+                      {follower.paragraph}
+                    </p>
                   </div>
                 </div>
 
                 <div>
-                  <button className="lg:text-[12px] text-[10px] text-[#6B6868] font-medium px-4 border border-[#6B6868] rounded-full py-1">{follower.following}</button>
+                  <button className="lg:text-[12px] text-[10px] text-[#6B6868] font-medium px-4 border border-[#6B6868] rounded-full py-1">
+                    {follower.following}
+                  </button>
                 </div>
               </div>
             ))}
           </div>
         )}
         {followingVisible && (
-          <div className="p-0">
+          <div className="p-0 mt-4">
             {following.map((user, index) => (
-              <div className="py-2" key={index}>
-                {user.name}
+              <div
+                className="flex justify-between mb-4 px-2  lg:container"
+                key={index}
+              >
+                <div className="flex items-center">
+                  <div>
+                    <img src={user.image.type} className="w-[60px]" alt="ok" />
+                  </div>
+                  <div>
+                    <h1 className="text-[12px] font-semibold">{user.name}</h1>
+                    <div className="flex items-center gap-2">
+                      <p className="text-[10px] font-normal">{user.username}</p>
+                      <p className=" text-[7px] border-none bg-[#6B6868]/30  px-1 py-[0.1rem]">{user.follows}</p>
+                    </div>
+                    <p className="text-[11.5px] font-semibold">
+                      {user.paragraph}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2">
+                  <button className="lg:text-[12px] text-[10px] text-white  bg-[#6B6868] font-medium px-4 border border-[#6B6868] rounded-full py-1">
+                    {user.follow}
+                  </button>
+                  <BiDotsHorizontalRounded/>
+                </div>
               </div>
             ))}
           </div>

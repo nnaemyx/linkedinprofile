@@ -88,10 +88,67 @@ export const following = [
     image: <Adsimage />,
     name: "Alisha tiffany",
     username: "@alishatiffany",
+    follow: "Follow",
+    follows: "Follows you",
     paragraph: "Software Engineer",
-    following: "Following",
-  }
-]
+  },
+  {
+    image: <Adsimage />,
+    name: "Alisha tiffany",
+    username: "@alishatiffany",
+    follows: "Follows you",
+    follow: "Follow",
+    paragraph: "Software Engineer",
+  },
+  {
+    image: <Adsimage />,
+    name: "Alisha tiffany",
+    username: "@alishatiffany",
+    follows: "Follows you",
+    follow: "Follow",
+    paragraph: "Software Engineer",
+  },
+  {
+    image: <Adsimage />,
+    name: "Alisha tiffany",
+    username: "@alishatiffany",
+    follows: "Follows you",
+    paragraph: "Software Engineer",
+    follow: "Follow",
+  },
+  {
+    image: <Adsimage />,
+    name: "Alisha tiffany",
+    username: "@alishatiffany",
+    follows: "Follows you",
+    follow: "Follow",
+    paragraph: "Software Engineer",
+  },
+  {
+    image: <Adsimage />,
+    name: "Alisha tiffany",
+    username: "@alishatiffany",
+    follows: "Follows you",
+    paragraph: "Software Engineer",
+    follow: "Follow",
+  },
+  {
+    image: <Adsimage />,
+    name: "Alisha tiffany",
+    username: "@alishatiffany",
+    follows: "Follows you",
+    follow: "Follow",
+    paragraph: "Software Engineer",
+  },
+  {
+    image: <Adsimage />,
+    name: "Alisha tiffany",
+    username: "@alishatiffany",
+    follows: "Follows you",
+    paragraph: "Software Engineer",
+    follow: "Follow",
+  },
+];
 
 export const people = [
   {
