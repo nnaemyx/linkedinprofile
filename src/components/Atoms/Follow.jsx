@@ -54,7 +54,7 @@ const Follow = ({ open, onClose }) => {
         </div>
         <hr className="w-[100%] text-[#6B6868]/50 mt-2" />
         {followersVisible && (
-          <div className=" lg:container mt-4 p-0">
+          <div className=" lg:container mt-4 lg:p-0">
             {followers.map((follower, index) => (
               <div className="flex justify-between mb-4 container" key={index}>
                 <div className="flex items-center">
