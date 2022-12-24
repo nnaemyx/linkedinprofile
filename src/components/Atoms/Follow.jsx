@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsArrowLeftShort } from "react-icons/bs";
+import { followers, following } from "../../Data";
 
 const Follow = ({ open, onClose }) => {
+  const [selected, setSelected] = useState("followers");
+  const [followersVisible, setFollowersVisible] = useState(true);
+  const [followingVisible, setFollowingVisible] = useState(false);
+
+  
+
+  const showFollowers = () => {
+    setFollowersVisible(true);
+    setFollowingVisible(false);
+    setSelected("followers");
+  };
+
+  const showFollowing = () => {
+    setFollowingVisible(true);
+    setFollowersVisible(false);
+    setSelected("following");
+  };
   if (!open) return null;
   return (
     <div className="bg-black/40 top-[0.01rem] left-[0.01rem] overflow-auto fixed w-[100%] h-[100%] ">
@@ -14,11 +32,42 @@ const Follow = ({ open, onClose }) => {
         </div>
         <p className="px-[3rem] text-[14px] -mt-[.1rem]">@alishatiffany</p>
 
-        <div className="flex text-[#6B6868] font-semibold lg:gap-[24rem] mt-5 lg:px-[6rem]">
-          <button>Followers</button>
-          <button>Following</button>
+        <div className="flex font-semibold lg:gap-[24rem] mt-5 lg:px-[6rem]">
+          <button
+            className={` text-[#6B6868]  font-bold py-2 px-4 rounded ${
+              selected === "followers" ? "border-b-4 border-primary text-black" : ""
+            }`}
+            onClick={showFollowers}
+          >
+            Followers
+          </button>
+          <button
+            className={`text-[#6B6868]  font-bold py-2 px-4 rounded ${
+              selected === "following" ? "border-b-4 text-black border-primary" : ""
+            }`}
+            onClick={showFollowing}
+          >
+            Following
+          </button>
         </div>
-        <hr className="w-[100%] text-[#6B6868]/50 mt-2" />
+          <hr className="w-[100%] text-[#6B6868]/50 mt-2" />
+        {followersVisible && (
+          <ul className="list-none p-0">
+            {followers.map((follower, index) => (
+              <img src= {follower.image.type} className="py-2" alt='ok' key={index}/>
+                
+            ))}
+          </ul>
+        )}
+        {followingVisible && (
+          <ul className="list-none p-0">
+            {following.map((user, index) => (
+              <li className="py-2" key={index}>
+                {user.name}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </div>
   );
