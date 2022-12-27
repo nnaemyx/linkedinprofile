@@ -65,14 +65,14 @@ const Profilesection = () => {
                     </p>
                   </div>
                   <div className="profile_follow flex gap-1 lg:text-[17px] text-[13px] mb-4">
-                    <p>
+                    <button onClick={() => setOpenModal(true)}>
                       {" "}
                       <span className="font-semibold">4K</span> Followers
-                    </p>
-                    <p>
+                    </button>
+                    <button onClick={() => setOpenModal(true)}>
                       {" "}
                       <span className="font-semibold">1K</span> Following
-                    </p>
+                    </button>
                   </div>
                   <div className="lg:mt-[14.5rem] lg:hidden flex">
                     <p className="px-[8px] pt-[2px] pb-[4px] rounded-full text-[12px] text-white bg-[#65ab66]">
@@ -81,7 +81,7 @@ const Profilesection = () => {
                   </div>
                   <div className="flex gap-2 mt-3 items-center">
                     <div>
-                      <button onClick={() => setOpenModal(true)} className="px-3 py-1 bg-primary text-white rounded-full flex items-center text-[12px]">
+                      <button  className="px-3 py-1 bg-primary text-white rounded-full flex items-center text-[12px]">
                         <span className="w-[14px]">{items.icon}</span>
                         {items.followbtn}
                       </button>
