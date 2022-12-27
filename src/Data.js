@@ -198,37 +198,37 @@ export const files = [
 export const reviews = [
   {
     image: <Adsimage />,
-    name: "jeff tank",
+    name: "Jeff Tank",
     paragraph: "Founder of pik",
     paragraph1: "The best i have ever worked with i will highly recommend him",
   },
   {
     image: <Adsimage />,
-    name: "jeff tank",
+    name: "Jeff Tank",
     paragraph: "Founder of pik",
     paragraph1: "The best i have ever worked with i will highly recommend him",
   },
   {
     image: <Adsimage />,
-    name: "jeff tank",
+    name: "Jeff Tank",
     paragraph: "Founder of pik",
     paragraph1: "The best i have ever worked with i will highly recommend him",
   },
   {
     image: <Adsimage />,
-    name: "jeff tank",
+    name: "Jeff Tank",
     paragraph: "Founder of pik",
     paragraph1: "The best i have ever worked with i will highly recommend him",
   },
   {
     image: <Adsimage />,
-    name: "jeff tank",
+    name: "Jeff Tank",
     paragraph: "Founder of pik",
     paragraph1: "The best i have ever worked with i will highly recommend him",
   },
   {
     image: <Adsimage />,
-    name: "jeff tank",
+    name: "Jeff Tank",
     paragraph: "Founder of pik",
     paragraph1: "The best i have ever worked with i will highly recommend him",
   },

@@ -1,74 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { AiFillStar } from "react-icons/ai";
 import { reviews } from "../../Data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
-import {AiFillStar} from 'react-icons/ai'
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+function DisclosureReviews() {
+  const [isOpen, setIsOpen] = useState(false);
 
-const Reviews = () => {
+  const toggleDisclosure = () => setIsOpen(!isOpen);
+
   return (
-    <div className="text-center">
-      <div className="lg:w-[730px] lg:mx-8  py-8 lg:pl-[2rem] pl-[1rem] lg:h-[190px]">
-        <h1 className="font-semibold text-[20px] mb-3">Reviews</h1>
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={0}
-          pagination={{
-            clickable: true,
-          }}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
-          navigation={{ clickable: true }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 5,
-            },
-          }}
-          modules={[Navigation]}
-          className="mySwiper min-h-[110px]"
-        >
-          {reviews.map((items, index) => {
-            return (
-              <SwiperSlide>
-                <div key={index} className='bg-white h-[240px] w-[200px] lg:w-auto lg:mx-0 mx-[3.5rem] text-center mb-8'>
-                  <img src={items.image.type} alt="" className="lg:mx-[5rem] mx-[4rem]  pt-4" />
-                  <div className="items-center">
-                    <h1 className="font-semibold">{items.name}</h1>
-                    <p>{items.paragraph}</p>
-                    <p className="lg:px-[1rem] mb-2 text-center">{ items.paragraph1}</p>
-                  </div>
-                  <div className="flex lg:w-auto w-20 mx-[3.5rem] lg:mx-[5rem]">
-                    <AiFillStar className="text-[#E8A41C]" />
-                    <AiFillStar className="text-[#E8A41C]" />
-                    <AiFillStar className="text-[#E8A41C]" />
-                    <AiFillStar className="text-[#E8A41C]" />
-                    <AiFillStar className="text-[#292D32]"/>
+    <div className="relative bg-white rounded-md mt-10">
+      <button
+        onClick={toggleDisclosure}
+        className="flex justify-between gap-[14rem]  items-center lg:px-4 py-2 lg:-mt-6 text-[17px] lg:w-[830px]  lg:pl-[2rem] pl-[1rem] lg:h-[104px] font-semibold leading-5  transition duration-150 ease-in-out"
+      >
+        Reviews
+        <div>
+          {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+        </div>
+      </button>
+
+      {isOpen && (
+        <div className="lg:-mt-4">
+          {reviews.map((review, index) => (
+            <div key={index} className="mb-5  ">
+              <div className="flex justify-between lg:px-4 px-4 lg:pl-[1rem] pl-[1rem]">
+                <div className="flex mb-5 lg:gap-1">
+                  <img
+                    src={review.image.type}
+                    alt=""
+                    className="w-[33px] h-[33px]"
+                  />
+                  <div className="flex lg:gap-10 items-center">
+                    <div>
+                      <h1 className="lg:text-[14px] text-[13px] font-semibold">
+                        {review.name}
+                      </h1>
+                      <p className="text-[10px] font-normal -mt-1">
+                        {review.paragraph}
+                      </p>
+                    </div>
+                    <div className="hidden lg:flex">
+                      <p className="text-[14px] font-medium">
+                        {review.paragraph1}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-      </div>
+
+                <div className="flex">
+                  <AiFillStar className="text-[orange] w-[15px]" />
+                  <AiFillStar className="text-[orange] w-[15px]" />
+                  <AiFillStar className="text-[orange] w-[15px]" />
+                  <AiFillStar className="text-[orange] w-[15px]" />
+                  <AiFillStar className="w-[15px]" />
+                </div>
+              </div>
+              <div className="lg:hidden px-4 -mt-4">
+                <p className="text-[12px] font-medium">{review.paragraph1}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
-};
+}
 
-export default Reviews;
+export default DisclosureReviews;
