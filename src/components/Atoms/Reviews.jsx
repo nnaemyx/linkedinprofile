@@ -12,7 +12,7 @@ function DisclosureReviews() {
     <div className="relative bg-white rounded-md mt-10">
       <button
         onClick={toggleDisclosure}
-        className="flex justify-between gap-[14rem]  items-center lg:px-4 py-2 lg:-mt-6 text-[17px] lg:w-[830px]  lg:pl-[2rem] pl-[1rem] lg:h-[104px] font-semibold leading-5  transition duration-150 ease-in-out"
+        className="flex justify-between gap-[14rem]  items-center lg:px-4 py-2 lg:-mt-6 text-[17px] lg:w-[830px]  lg:pl-[2rem] pl-[1rem] lg:h-[104px] h-[80px] font-semibold leading-5  transition duration-150 ease-in-out"
       >
         Reviews
         <div>

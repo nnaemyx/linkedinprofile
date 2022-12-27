@@ -9,6 +9,7 @@ import Messagebtn from "./Messagebtn";
 // import {CgClose} from 'react-icons/cg'
 import MobileProfille from "./MobileProfille";
 import Follow from "./Follow";
+import Morebtn from "./Morebtn";
 
 const Profilesection = () => {
   const [click, setClick] = useState(false);
@@ -18,7 +19,7 @@ const Profilesection = () => {
   };
 
   return (
-    <div className="bg-white lg:h-[530px] h-[375px] rounded-t-lg">
+    <div className="bg-white lg:h-[530px] h-[375px] w-[100%] rounded-t-lg">
       <div className="bg-primary lg:h-[220px] h-[110px] lg:rounded-t-lg">
         {profile.map((items, index) => {
           return (
@@ -64,7 +65,7 @@ const Profilesection = () => {
                       {items.location}
                     </p>
                   </div>
-                  <div className="profile_follow flex gap-1 lg:text-[17px] text-[13px] mb-4">
+                  <div className="flex gap-1 lg:text-[17px] text-[13px] mb-4">
                     <button onClick={() => setOpenModal(true)}>
                       {" "}
                       <span className="font-semibold">4K</span> Followers
@@ -93,9 +94,7 @@ const Profilesection = () => {
                     </div>
 
                     <div>
-                      <button className="px-3 py-[0.15rem] border-2 border-[#595959]  text-[#595959] rounded-full text-[12px]">
-                        {items.morebtn}
-                      </button>
+                     <Morebtn/>
                     </div>
 
                     <div>
