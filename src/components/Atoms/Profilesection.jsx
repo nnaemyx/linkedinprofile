@@ -93,7 +93,7 @@ const Profilesection = () => {
                       <Messagebtn />
                     </div>
 
-                    <div>
+                    <div className="hidden lg:flex">
                      <Morebtn/>
                     </div>
 
